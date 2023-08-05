@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  place-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.bright-orange {
+  background-color: var(--bright-orange);
+}
+
+.dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+
+.card {
+  padding: 2rem;
+  height: 24rem;
+}
+
+.card.bright-orange {
+  border-radius: 6px 0px 0px 6px;
+}
+.card.very-dark-cyan {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.card svg {
+  margin-bottom: 1.5rem;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--transparent-white);
+  font-size: 0.8em;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card button {
+  background-color: var(--very-light-gray);
+  border: 0;
+  padding: 0.6rem 1.5rem;
+  border-radius: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.card.bright-orange button {
+  color: var(--bright-orange);
+}
+.card.dark-cyan button {
+  color: var(--dark-cyan);
+}
+.card.very-dark-cyan button {
+  color: var(--very-dark-cyan);
+}
+
+.card.bright-orange button:hover {
+  background-color: var(--bright-orange);
+}
+.card.dark-cyan button:hover {
+  background-color: var(--dark-cyan);
+}
+.card.very-dark-cyan button:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.card button:hover {
+  color: white;
+  border: 1px solid var(--very-light-gray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 720px) {
+  main {
+    margin-top: 1rem;
+  }
+
+  .card.bright-orange {
+    border-radius: 6px 6px 0 0;
+  }
+  .card.very-dark-cyan {
+    border-radius: 0 0 6px 6px;
+  }
+}
