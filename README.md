@@ -7,11 +7,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -27,8 +24,6 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Replit](https://frontend-mentor-or-3-column-preview-card-component.etmareka.repl.co)
-
-## My process
 
 ### Built with
 
